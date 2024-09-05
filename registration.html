@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style> 
+        body {
+            background-color: royalblue;
+        }
+        h1{
+            text-align: center;
+        }
+        .form {
+            text-align: center;
+            height: 500px;
+            width: 500px;
+            background-color: bisque;
+            margin-left: 400px;
+            padding-top: 50px;
+        }
+        .mb-3 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <form class="form" action="register" method="post"> 
+            <h1> Registration </h1>
+
+        <div class="mb-3">
+            <label for="name" class="form-label">Your Name :</label>
+            <input type="text" id="name" name="name">
+            <div id="nameHelp" class="form-text"></div>
+        </div>
+        <br>
+        <div class="mb-3">
+            <label for="mobile" class="form-label">Phone Number :</label>
+            <input type="number" id="phone" name="phone">
+            <div id="mobileHelp" class="form-text"></div>
+        </div>
+        <br>
+        <div class="mb-3">
+            <label for="email" class="form-label">Email :</label>
+            <input type="email" id="email" name="email">
+            <div id="emailHelp" class="form-text"></div>
+        </div>
+        <br>
+        <div class="mb-3">
+            <label class="form-label">Gender :</label>
+            <input type="radio" id="male" name="gender" value="Male">Male 
+            <input type="radio" id="female" name="gender" value="Female">Female
+        </div>
+        <br>
+        <div class="mb-3">
+            <label for="address" class="form-label">Address :</label>
+            <input type="text" id="address" name="address">
+            <div id="addressHelp" class="form-text"></div>
+        </div>
+        <br>
+        <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</body>
+</html>
